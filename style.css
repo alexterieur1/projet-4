@@ -1,3 +1,7 @@
+*{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial; 
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -821,7 +825,9 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-
+address{
+    padding-top:20px;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
