@@ -373,6 +373,10 @@ address{
     position: relative;
     z-index: 2;
 }
+.col-sm-4-footer{
+    width:50%;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
