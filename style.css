@@ -374,9 +374,19 @@ address{
     z-index: 2;
 }
 .col-sm-4-footer{
-    width:50%;
+    width:100%;
+    text-align:center;
+}
+.liste-footer{
+    display:flex;
+    text-align:start;
+    flex-direction: column;
+    margin:0 auto;
 }
 
+.image-formatTel{
+    width:600px;
+}
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -416,8 +426,17 @@ address{
         float: none;
         margin: 10px auto 0;
     }
+    .image-formatTel{
+        min-width:auto;
+    }
 }
-
+@media (min-width:600px){
+    .liste-footer{
+        flex-direction: row;
+        width:100%;
+        margin:0;
+    }
+}
 .nav > li > .dropdown a {
     background: none!important;
     display: block;
@@ -866,13 +885,13 @@ a{
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -890,10 +909,6 @@ a{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -902,8 +917,6 @@ a{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1056,5 +1069,10 @@ a{
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .row
+    {
+        margin-inline: 0px;
+        margin:0 auto;
     }
 }
